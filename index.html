@@ -292,30 +292,47 @@
   <!-- Additional results meshlab-->
   <section class="section" id="additional-results">
     <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full">
-          <h2 class="title is-3 has-text-centered">Additional Results</h2>
   
-          <div class="additional-results-block">
-            <img
-              src="static/images/pointclouds_1.png"
-              alt="Additional strand-based reconstruction results shown with raw geometry visualization"
-              class="additional-results-image"
-            >
-            <img
-              src="static/images/pointclouds_2.png"
-              alt="Additional strand-based reconstruction results shown with raw geometry visualization"
-              class="additional-results-image"
-            >
+      <!-- Section title -->
+      <h2 class="title is-3 has-text-centered">Additional Results</h2>
   
-            <p class="additional-results-caption">
-              We show additional reconstruction results using direct geometry visualization instead of photorealistic rendering.
-              This view highlights strand flow, local structure, silhouette quality, and backside consistency more clearly,
-              avoiding appearance artifacts introduced by downstream shaders and rendering engines.
-            </p>
-          </div>
-        </div>
+      <!-- 1️⃣ Intro text (evaluation description) -->
+      <div class="content has-text-justified additional-results-intro">
+        <p>
+          We evaluate our reconstruction quality using direct geometry visualization instead of photorealistic rendering.
+          We provide additional qualitative comparisons to further assess
+          the geometric fidelity of reconstructed hairstyles.
+        </p>
       </div>
+  
+      <!-- 2️⃣ Image -->
+      <div class="additional-results-block">
+        <img
+          src="static/images/pointclouds_1.png"
+          alt="Additional geometry results"
+          class="additional-results-image"
+        >
+        <img
+          src="static/images/pointclouds_2.png"
+          alt="Additional geometry results"
+          class="additional-results-image"
+        >
+
+        <!-- 3️⃣ Caption -->
+        <p class="additional-results-caption">
+          We compare our method against Im2Haircut, Difflocks, Hairstep , and MV-Scanner on multiple subjects from the NeRSemble dataset. We visualize geometry-only
+          renderings with zoom-in crops highlighting local strand structure. 
+          Our method preserves strand structure, local flow, and ovall hair volume across diverse hairstyles.
+        </p>
+  
+        <!-- 4️⃣ Extra explanation (optional but strong) -->
+        <p class="additional-results-description">
+          Our method produces more accurate and coherent strand-based geometry, preserving both volumetric structure and local strand flow.
+          In particular, it better preserves volumetric structure and strand alignment in side views, where competing methods often exhibit oversmoothing or noisy, incoherent strand patterns. 
+          These results highlight the ability of our approach to reconstruct more faithful and personalized hairstyles compared to prior work.
+        </p>
+      </div>
+  
     </div>
   </section>
 
