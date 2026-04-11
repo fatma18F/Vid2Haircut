@@ -108,7 +108,7 @@
                 <sup>4</sup><a href="https://ait.ethz.ch">TU Darmstadt</a>,
                 <sup>3</sup><a href="https://ait.ethz.ch">ETH Zurich</a>,
                 <sup>2</sup><a href="https://is.mpg.de">Max Planck Institute for Intelligent Systems</a>,
-                <sup>1</sup><a>Technical University of Munich</a>,
+                <sup>1</sup><a>Technical University of Munich</a>
                 <br>
                 EUROGRAPHICS 2026
               </span>
@@ -156,22 +156,28 @@
     </div>
   </section>
 
-  <!-- Teaser video-->
+  <!-- Teaser image -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/ksyusha_teaser.mp4"
-          type="video/mp4">
-        </video>
+
+        <!-- Teaser image -->
+        <img src="static/images/figure_method.png" 
+            alt="Vid2Haircut teaser" 
+            style="width: 100%; height: auto; border-radius: 10px;">
+
+        <!-- Caption -->
         <h2 class="subtitle has-text-centered">
-          <strong>Gaussian Haircut</strong> reconstructs strand-based hair geometry from a monocular video in a few hours on a single GPU.
+          <strong>Method Pipeline.</strong><br>
+          Using the Im2Haircut prior, we initialize a canonical hairstyle from a frontal frame and jointly optimize it across selected video keyframes.<br><br>
+          A shared PCA hair map <b>Z</b> is refined across frames, while a deformation MLP models non-rigid motion.<br><br>
+          Visibility-aware updates ensure reliable regions guide optimization, stabilized by smoothness and reprojection losses.
         </h2>
+
       </div>
     </div>
   </section>
-  <!-- End teaser video -->
+  <!-- End teaser image -->
 
   <!-- Paper abstract -->
   <section class="section hero is-light">
@@ -180,7 +186,6 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            div class="content has-text-justified">
             <p>
               We present <strong>Vid2Haircut</strong>, a novel approach for strand-based 3D hair reconstruction from monocular head-motion videos. While existing multi-view methods achieve high-fidelity results, they require controlled capture setups. In contrast, single-image approaches suffer from occlusion-driven ambiguities, particularly in unseen regions such as the back of the head. Recent monocular video methods improve reconstruction by leveraging learned priors, but may struggle under natural head motion.
             </p>
