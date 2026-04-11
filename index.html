@@ -293,48 +293,45 @@
   
 
   <!-- Additional results meshlab-->
-<section class="section" id="additional-results">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+  <section class="section" id="additional-results">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
 
-        <!-- Section title -->
-        <h2 class="title is-3">Additional Results</h2>
+          <!-- Section title -->
+          <h2 class="title is-3 has-text-centered">Additional Results</h2>
+          <!-- Intro text -->
+          <div class="content has-text-justified additional-results-intro">
+            <p>
+              We evaluate our reconstruction quality using direct geometry visualization instead of photorealistic rendering.
+              We provide additional qualitative comparisons to further assess
+              the geometric fidelity of reconstructed hairstyles.
+            </p>
+          </div>
 
-        <!-- Intro text -->
-        <div class="content has-text-justified additional-results-intro">
-          <p>
-            We evaluate our reconstruction quality using direct geometry visualization instead of photorealistic rendering.
-            We provide additional qualitative comparisons to further assess
-            the geometric fidelity of reconstructed hairstyles.
-          </p>
-        </div>
+          <!-- Images -->
+          <div class="additional-results-block">
+            <img src="static/images/pointclouds_1.png" class="additional-results-image">
+            <img src="static/images/pointclouds_2.png" class="additional-results-image">
 
-        <!-- Images -->
-        <div class="additional-results-block">
-          <img src="static/images/pointclouds_1.png" class="additional-results-image">
-          <img src="static/images/pointclouds_2.png" class="additional-results-image">
+            <!-- Caption -->
+            <p class="additional-results-caption">
+              We compare our method against Im2Haircut, Difflocks, Hairstep, and MV-Scanner on multiple subjects from the NeRSemble dataset.
+              We visualize geometry-only renderings with zoom-in crops highlighting local strand structure.
+              Our method preserves strand structure, local flow, and overall hair volume across diverse hairstyles.
+            </p>
 
-          <!-- Caption -->
-          <p class="additional-results-caption">
-            We compare our method against Im2Haircut, Difflocks, Hairstep, and MV-Scanner on multiple subjects from the NeRSemble dataset.
-            We visualize geometry-only renderings with zoom-in crops highlighting local strand structure.
-            Our method preserves strand structure, local flow, and overall hair volume across diverse hairstyles.
-          </p>
-
-          <!-- ✅ FIXED: now correctly inside -->
-          <p class="additional-results-description">
-            Our method produces more accurate and coherent strand-based geometry, preserving both volumetric structure and local strand flow.
-            In particular, it better preserves volumetric structure and strand alignment in side views, where competing methods often exhibit oversmoothing or noisy, incoherent strand patterns.
-            These results highlight the ability of our approach to reconstruct more faithful and personalized hairstyles compared to prior work.
-          </p>
-
+            <p class="additional-results-description">
+              Our method produces more accurate and coherent strand-based geometry, preserving both volumetric structure and local strand flow.
+              In particular, it better preserves volumetric structure and strand alignment in side views, where competing methods often exhibit oversmoothing or noisy, incoherent strand patterns.
+              These results highlight the ability of our approach to reconstruct more faithful and personalized hairstyles compared to prior work.
+            </p>
+          </div>
         </div>
 
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
