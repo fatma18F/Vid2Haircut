@@ -166,10 +166,8 @@
             style="width: 100%; height: auto; border-radius: 10px;">
         <!-- Caption -->
         <h2 class="subtitle has-text-centered">
-          <strong>Method Pipeline.</strong>
-            Using the Im2Haircut prior, we initialize the canonical hairstyle from a frontal reference frame. We then select key frames from the monocular video and perform joint optimization.
-            A shared PCA hair map <b>Z</b> is refined across frames, while a deformation MLP accounts for non-rigid motion.
-            Visibility-driven updates ensure that gradients modify the canonical map only in regions with reliable observations, with optimization stabilized by smoothness regularization and reprojection losses.
+          Our method reconstructs strand-based 3D hairstyles from short monocular videos with natural head motion. 
+These casual captures provide additional viewpoints beyond a single image, implicitly encoding multi-view observations and motion cues that improve hair length estimation and resolve occlusions.
         </h2>
       </div>
     </div>
