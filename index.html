@@ -217,66 +217,66 @@
   <!-- End youtube video -->
 
   <!-- Main idea -->
-<!-- Main idea -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Main idea</h2>
+  <!-- Main idea -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Main idea</h2>
 
-        <!-- <div class="row">
-          <div class="col-lg-16 text-white">
-            <img class="img-fluid mb-3" src="static/images/figure_method" alt="Vid2Haircut overview">
+          <div class="row">
+            <div class="col-lg-16 text-white">
+              <img class="img-fluid mb-3" src="static/images/figure1.png" alt="Vid2Haircut overview">
+            </div>
           </div>
-        </div> -->
 
-        <div class="content has-text-justified is-four-fifths">
-          <p>
-            <strong>Vid2Haircut</strong> reconstructs a strand-based 3D hairstyle from a short monocular head-motion video.
-            Instead of requiring dense multi-view capture, our method leverages a small number of views obtained from natural
-            head motion to recover a consistent 3D hairstyle.
-          </p>
+          <div class="content has-text-justified is-four-fifths">
+            <p>
+              <strong>Vid2Haircut</strong> reconstructs high-fidelity, strand-based 3D hairstyles from a short monocular head-motion video.
+              Rather than relying on dense multi-view capture, our method leverages a small set of viewpoints obtained from natural head rotations
+              to recover consistent 3D hair geometry.
+            </p>
 
-          <p>
-            <strong>Canonical hair representation.</strong>
-            Using the <em>Im2Haircut</em> prior, we initialize a canonical hairstyle from a frontal reference frame.
-            We then select keyframes from the monocular video and refine this shared canonical representation across views.
-            This allows the method to integrate additional observations from partial side views while keeping a stable global hairstyle.
-          </p>
+            <p>
+              <strong>Canonical hair representation.</strong>
+              We build upon the <em>Im2Haircut</em> prior to initialize a canonical hairstyle from a single frontal reference frame.
+              We then select a small number of keyframes from the input video and refine this shared representation across views,
+              allowing additional observations from partial side views to improve the overall structure while maintaining global consistency.
+            </p>
 
-          <p>
-            <strong>Two-stage optimization.</strong>
-            In the first stage, we optimize the canonical hairstyle from a single frontal frame to obtain a coherent initialization.
-            In the second stage, we jointly refine the hairstyle using multiple keyframes, enforcing cross-view consistency through
-            silhouette, orientation, and depth-based supervision.
-          </p>
-        </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-16 text-white">
-            <img class="img-fluid mb-3" src="static/images/figure2.png" alt="Vid2Haircut deformation and refinement">
+            <p>
+              <strong>Two-stage optimization.</strong>
+              We first recover a stable canonical hairstyle from a single image, providing a strong initialization.
+              In a second stage, we refine the hairstyle jointly across multiple frames, enforcing multi-view consistency and resolving
+              ambiguities that cannot be addressed from a single view alone.
+            </p>
           </div>
-        </div> -->
 
-        <div class="content has-text-justified is-four-fifths">
-          <p>
-            <strong>Deformation-aware refinement.</strong>
-            Since hair can move slightly across frames, we introduce a deformation MLP that predicts small frame-dependent residual
-            offsets for the canonical strands. This deformation model captures non-rigid motion without changing the underlying hairstyle,
-            preventing transient motion from being baked into the canonical reconstruction.
-          </p>
+          <div class="row">
+            <div class="col-lg-16 text-white">
+              <img class="img-fluid mb-3" src="static/images/figure2.png" alt="Vid2Haircut deformation and refinement">
+            </div>
+          </div>
 
-          <p>
-            By combining a canonical strand representation with multi-frame refinement and deformation-aware updates, Vid2Haircut
-            recovers more complete and consistent 3D hair geometry from sparse monocular viewpoints, especially in regions that are
-            ambiguous from a single image alone.
-          </p>
+          <div class="content has-text-justified is-four-fifths">
+            <p>
+              <strong>Deformation-aware refinement.</strong>
+              To model non-rigid hair behavior, we introduce a deformation MLP that predicts small, frame-dependent residual offsets
+              for each strand. This allows us to capture subtle motion and view-dependent variations while preserving a clean and stable
+              canonical hairstyle.
+            </p>
+
+            <p>
+              By combining a canonical strand representation with deformation-aware multi-frame refinement, Vid2Haircut recovers
+              more complete and coherent 3D hairstyles from sparse monocular inputs, particularly in side and previously unobserved regions.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
- 
+  </section>
+  
 
 
 
