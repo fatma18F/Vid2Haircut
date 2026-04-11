@@ -166,9 +166,10 @@
             style="width: 100%; height: auto; border-radius: 10px;">
         <!-- Caption -->
         <h2 class="subtitle has-text-centered">
-          <strong>Method Pipeline.</strong> Using the Im2Haircut prior, we initialize a canonical hairstyle from a frontal frame and jointly optimize it across selected video keyframes.<br><br>
-          A shared PCA hair map <b>Z</b> is refined across frames, while a deformation MLP models non-rigid motion.
-          Visibility-aware updates ensure reliable regions guide optimization, stabilized by smoothness and reprojection losses.
+          <strong>Method Pipeline.</strong>
+            Using the Im2Haircut prior, we initialize the canonical hairstyle from a frontal reference frame. We then select key frames from the monocular video and perform joint optimization.
+            A shared PCA hair map <b>Z</b> is refined across frames, while a deformation MLP accounts for non-rigid motion.
+            Visibility-driven updates ensure that gradients modify the canonical map only in regions with reliable observations, with optimization stabilized by smoothness regularization and reprojection losses.
         </h2>
       </div>
     </div>
