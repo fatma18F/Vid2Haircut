@@ -225,27 +225,7 @@
           <h2 class="title is-3">Main idea</h2>
 
 
-          <div class="content has-text-justified is-four-fifths">
-            <p>
-              <strong>Vid2Haircut</strong> reconstructs high-fidelity, strand-based 3D hairstyles from a short monocular head-motion video.
-              Rather than relying on dense multi-view capture, our method leverages a small set of viewpoints obtained from natural head rotations
-              to recover consistent 3D hair geometry.
-            </p>
 
-            <p>
-              <strong>Canonical hair representation.</strong>
-              We build upon the <em>Im2Haircut</em> prior to initialize a canonical hairstyle from a single frontal reference frame.
-              We then select a small number of keyframes from the input video and refine this shared representation across views,
-              allowing additional observations from partial side views to improve the overall structure while maintaining global consistency.
-            </p>
-
-            <p>
-              <strong>Two-stage optimization.</strong>
-              We first recover a stable canonical hairstyle from a single image, providing a strong initialization.
-              In a second stage, we refine the hairstyle jointly across multiple frames, enforcing multi-view consistency and resolving
-              ambiguities that cannot be addressed from a single view alone.
-            </p>
-          </div>
 
           <div class="row">
             <div class="col-lg-16 text-white">
@@ -255,16 +235,12 @@
 
           <div class="content has-text-justified is-four-fifths">
             <p>
-              <strong>Deformation-aware refinement.</strong>
-              To model non-rigid hair behavior, we introduce a deformation MLP that predicts small, frame-dependent residual offsets
-              for each strand. This allows us to capture subtle motion and view-dependent variations while preserving a clean and stable
-              canonical hairstyle.
+              We propose Vid2Haircut, which extends the strand-based prior of Im2Haircut to multi-frame input. Our core contribution is a joint optimization
+              framework that aggregates information across multiple keyframes into a shared, PCA-parameterized hair map. To handle mild nonrigid hair motion during capture, we introduce a deformation MLP
+              that predicts residual per-frame offsets, preventing such variations from being encoded into the canonical hairstyle. Furthermore, we incorporate a visibility-aware optimization strategy to stabilize
+              poorly observed regions, updating them only when reliable observations are available. By prioritizing multi-view observations over reliance on learned priors alone, our method achieves more accurate and personalized hairstyle reconstruction
             </p>
-
-            <p>
-              By combining a canonical strand representation with deformation-aware multi-frame refinement, Vid2Haircut recovers
-              more complete and coherent 3D hairstyles from sparse monocular inputs, particularly in side and previously unobserved regions.
-            </p>
+ 
           </div>
 
         </div>
