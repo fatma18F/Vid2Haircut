@@ -221,24 +221,23 @@
   <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+
         <div class="column is-four-fifths">
           <h2 class="title is-3">Main idea</h2>
-
-
-
-
           <div class="row">
             <div class="col-lg-16 text-white">
               <img class="img-fluid mb-3" src="static/images/figure_method.png" alt="Vid2Haircut deformation and refinement">
             </div>
           </div>
+        </div>
 
           <div class="content has-text-justified is-four-fifths">
             <p>
               We propose Vid2Haircut, which extends the strand-based prior of Im2Haircut to multi-frame input. Our core contribution is a joint optimization
               framework that aggregates information across multiple keyframes into a shared, PCA-parameterized hair map. To handle mild nonrigid hair motion during capture, we introduce a deformation MLP
               that predicts residual per-frame offsets, preventing such variations from being encoded into the canonical hairstyle. Furthermore, we incorporate a visibility-aware optimization strategy to stabilize
-              poorly observed regions, updating them only when reliable observations are available. By prioritizing multi-view observations over reliance on learned priors alone, our method achieves more accurate and personalized hairstyle reconstruction
+              poorly observed regions, updating them only when reliable observations are available. By prioritizing multi-view observations over reliance on learned priors alone, our method achieves more accurate and personalized hairstyle reconstruction.
             </p>
  
           </div>
@@ -252,7 +251,9 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <div class="column is-four-fifths">
+      <div class="columns is-centered has-text-centered">
+
+       <div class="column is-four-fifths">
         <h2 class="title is-3">Comparison</h2>
 
         <div class="content has-text-justified is-four-fifths comparison-text">
@@ -284,6 +285,7 @@
       </div>
     </div>
   </div>
+</div>
 </section>
 
   <!--BibTex citation -->
