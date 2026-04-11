@@ -248,46 +248,80 @@
     </div>
   </section>
   
-  <!-- Comparison -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
+    <!-- Comparison -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
 
-       <div class="column is-four-fifths">
-        <h2 class="title is-3">Comparison</h2>
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Comparison</h2>
 
-        <div class="content has-text-justified is-four-fifths comparison-text">
-          <p>
-            We compare <strong>Vid2Haircut</strong> with state-of-the-art single-view hair reconstruction methods,
-            including <em>Hairstep</em>, <em>Difflocks</em>, and <em>Im2Haircut</em>, as well as a commercial
-            mobile-scanning solution for hair, denoted as <strong>MS-Hair</strong>.
-          </p>
+          <div class="content has-text-justified is-four-fifths comparison-text">
+            <p>
+              We compare <strong>Vid2Haircut</strong> with state-of-the-art single-view hair reconstruction methods,
+              including <em>Hairstep</em>, <em>Difflocks</em>, and <em>Im2Haircut</em>, as well as a commercial
+              mobile-scanning solution for hair, denoted as <strong>MS-Hair</strong>.
+            </p>
 
 
-          <p>
-            While single-view methods often struggle with occluded regions and incomplete 3D structure, our method
-            leverages multiple views from a short monocular video to recover more consistent strand geometry and
-            better preserve hairstyle-specific details.
-          </p>
-        </div>
+            <p>
+              While single-view methods often struggle with occluded regions and incomplete 3D structure, our method
+              leverages multiple views from a short monocular video to recover more consistent strand geometry and
+              better preserve hairstyle-specific details.
+            </p>
+          </div>
 
-        <div class="comparison-figure-wrapper">
-          <img
-            class="comparison-figure"
-            src="static/images/baslines_compare.png"
-            alt="Comparison with Hairstep, Difflocks, Im2Haircut, and MS-Hair"
-          >
-          <p class="comparison-caption">
-            Comparison with prior single-view and commercial baselines. Our method better preserves hairstyle-specific
-            structure and improves consistency in side and partially occluded regions.
-          </p>
+          <div class="comparison-figure-wrapper">
+            <img
+              class="comparison-figure"
+              src="static/images/baslines_compare.png"
+              alt="Comparison with Hairstep, Difflocks, Im2Haircut, and MS-Hair"
+            >
+            <p class="comparison-caption">
+              Comparison with prior single-view and commercial baselines. Our method better preserves hairstyle-specific
+              structure and improves consistency in side and partially occluded regions.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</section>
+  </section>
+  
+  <!-- Additional results meshlab-->
+  <section class="section" id="additional-results">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered">Additional Results</h2>
+  
+          <div class="additional-results-block">
+            <img
+              src="static/images/poinclouds_1.png"
+              alt="Additional strand-based reconstruction results shown with raw geometry visualization"
+              class="additional-results-image"
+            >
+            <img
+              src="static/images/poinclouds_2.png"
+              alt="Additional strand-based reconstruction results shown with raw geometry visualization"
+              class="additional-results-image"
+            >
+  
+            <p class="additional-results-caption">
+              We show additional reconstruction results using direct geometry visualization instead of photorealistic rendering.
+              This view highlights strand flow, local structure, silhouette quality, and backside consistency more clearly,
+              avoiding appearance artifacts introduced by downstream shaders and rendering engines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
   <!--BibTex citation -->
     <section class="section" id="BibTeX">
