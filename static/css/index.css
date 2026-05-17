@@ -134,7 +134,40 @@ body {
 }
 
 
+.comparison-section {
+  padding-top: 1rem;
+}
+
+.comparison-text {
+  max-width: 760px;
+  margin: 0 auto 1.75rem auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.comparison-figure-wrapper {
+  max-width: 900px;
+  margin: 2rem auto 2.5rem auto;
+  text-align: center;
+}
+
 .comparison-figure {
   width: 100%;
-  border-radius: 12px;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.comparison-video {
+  border-radius: 4px;
+  background: #f2f2f2;
+}
+
+.comparison-caption {
+  max-width: 840px;
+  margin: 0.75rem auto 0 auto;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: center;
 }
