@@ -134,40 +134,30 @@ body {
 }
 
 
+
 .teaser-video-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.7rem;
-  max-width: 1000px;
+  gap: 0.5rem;
+  max-width: 850px;
   margin: 0 auto 1rem auto;
 }
 
 .teaser-video {
   width: 100%;
-  height: auto;
+  height: 230px;
+  object-fit: cover;
   display: block;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #f2f2f2;
 }
 
 .teaser-caption {
-  max-width: 950px;
+  max-width: 850px;
   margin: 0.75rem auto 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.55;
-  text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  .teaser-video-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .teaser-video-grid {
-    grid-template-columns: 1fr;
-  }
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: left;
 }
 
 
