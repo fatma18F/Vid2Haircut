@@ -137,8 +137,8 @@ body {
 .teaser-video-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem;
-  max-width: 1200px;
+  gap: 0.7rem;
+  max-width: 1000px;
   margin: 0 auto 1rem auto;
 }
 
