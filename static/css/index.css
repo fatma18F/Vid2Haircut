@@ -135,7 +135,7 @@ body {
 
 
 .comparison-text {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 1.75rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
@@ -162,7 +162,7 @@ body {
 }
 
 .comparison-caption {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0.9rem auto 0 auto;
   font-size: 1rem;
   line-height: 1.45;
@@ -174,7 +174,7 @@ body {
 }
 
 #additional-results .additional-results-intro {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 1.75rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
@@ -182,7 +182,7 @@ body {
 }
 
 #additional-results .additional-results-block {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 1.75rem auto 1.75rem auto;
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 #additional-results .additional-results-caption-text {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0.75rem auto 2.5rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
@@ -201,7 +201,7 @@ body {
 }
 
 #additional-results .additional-results-description-text {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 1.5rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
