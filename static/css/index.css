@@ -169,11 +169,21 @@ body {
   text-align: center;
 }
 
+#additional-results {
+  padding-bottom: 3rem;
+}
+
+#additional-results .additional-results-intro {
+  max-width: 900px;
+  margin: 0 auto 1.75rem auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  text-align: justify;
+}
 
 #additional-results .additional-results-block {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 1.75rem auto 1.75rem auto;
-  text-align: left !important;
 }
 
 #additional-results .additional-results-image {
@@ -183,17 +193,17 @@ body {
 }
 
 #additional-results .additional-results-caption-text {
-  max-width: 820px;
+  max-width: 900px;
   margin: 0.75rem auto 2.5rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
-  text-align: left !important;
+  text-align: left;
 }
 
 #additional-results .additional-results-description-text {
-  max-width: 820px;
+  max-width: 900px;
   margin: 0 auto 1.5rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
-  text-align: left !important;
+  text-align: left;
 }
