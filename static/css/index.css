@@ -174,7 +174,7 @@ body {
 }
 
 #additional-results .additional-results-intro {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto 1.75rem auto;
   font-size: 1.05rem;
   line-height: 1.55;
@@ -182,7 +182,7 @@ body {
 }
 
 #additional-results .additional-results-block {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 1.75rem auto 1.75rem auto;
 }
 
