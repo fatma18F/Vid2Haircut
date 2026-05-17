@@ -133,11 +133,43 @@ body {
   font-size: smaller;
 }
 
+
+.teaser-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto 1rem auto;
+}
+
 .teaser-video {
-  max-width: 500px;
-  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
   background: #f2f2f2;
 }
+
+.teaser-caption {
+  max-width: 950px;
+  margin: 0.75rem auto 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .teaser-video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .teaser-video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .comparison-text {
   max-width: 1000px;
