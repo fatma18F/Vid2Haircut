@@ -147,7 +147,7 @@ body {
 
 .comparison-figure-wrapper {
   max-width: 900px;
-  margin: 2rem auto 2.5rem auto;
+  margin: 2.25rem auto 3rem auto;
   text-align: center;
 }
 
@@ -160,13 +160,15 @@ body {
 }
 
 .comparison-video {
+  max-width: 820px;
   border-radius: 4px;
   background: #f2f2f2;
 }
 
+
 .comparison-caption {
-  max-width: 840px;
-  margin: 0.75rem auto 0 auto;
+  max-width: 820px;
+  margin: 0.9rem auto 0 auto;
   font-size: 1rem;
   line-height: 1.45;
   text-align: center;
