@@ -43,13 +43,13 @@
 #main-idea .main-idea-image,
 .main-idea-image {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto 1rem auto;
 }
 
 .main-idea-text {
-  max-width: 1050px;
+  max-width: 1200px;
   margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.55;
