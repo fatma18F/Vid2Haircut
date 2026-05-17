@@ -274,23 +274,21 @@
     </div>
   </section>
   
+<!-- Comparison -->
+<section class="hero is-small comparison-section">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
 
-    <!-- Comparison -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-
-        <div class="column is-four-fifths">
           <h2 class="title is-3">Comparison</h2>
 
-          <div class="content has-text-justified is-four-fifths comparison-text">
+          <div class="content has-text-justified comparison-text">
             <p>
               We compare <strong>Vid2Haircut</strong> with state-of-the-art single-view hair reconstruction methods,
               including <em>Hairstep</em>, <em>Difflocks</em>, and <em>Im2Haircut</em>, as well as a commercial
               mobile-scanning solution for hair, denoted as MS-Hair.
             </p>
-
           </div>
 
           <div class="comparison-figure-wrapper">
@@ -299,30 +297,29 @@
               src="static/images/baslines_compare.png"
               alt="Comparison with Hairstep, Difflocks, Im2Haircut, and MS-Hair"
             >
+
             <p class="comparison-caption">
               <strong>Comparison with prior single-view and commercial baselines (Part I).</strong>
-              Our method better preserves hairstyle-specific
-              structure and improves consistency in side and partially occluded regions.
+              Our method better preserves hairstyle-specific structure and improves consistency in side and partially occluded regions.
             </p>
           </div>
 
           <div class="comparison-figure-wrapper">
             <video
-              class="comparison-figure"
+              class="comparison-figure comparison-video"
               controls
               autoplay
               muted
               loop
               playsinline
+              preload="metadata"
             >
               <source src="static/images/final_tighter_web.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          
+
             <p class="comparison-caption">
               <strong>Comparison with prior single-view and commercial baselines (Part II).</strong>
-            </p>
-            <p>
               While single-view methods often struggle with occluded regions and incomplete 3D structure, our method
               leverages multiple views from a short monocular video to recover more consistent strand geometry and
               better preserve hairstyle-specific details.
@@ -333,8 +330,7 @@
       </div>
     </div>
   </div>
-  </section>
-  
+</section>
 
   <!-- Additional results meshlab-->
   <section class="section" id="additional-results">
