@@ -320,7 +320,7 @@
             </video>
 
             <p class="comparison-caption">
-              <strong>Comparison with prior single-view and commercial baselines under a shared camera trajectory.</strong>
+              <strong>Comparison under a shared camera trajectory.</strong>
               While single-view methods often struggle with occluded regions and incomplete 3D structure, our method
               leverages multiple views from a short monocular video to recover more consistent strand geometry and
               better preserve hairstyle-specific details.
@@ -334,49 +334,44 @@
 </section>
 
   <!-- Additional results meshlab-->
-  <section class="section" id="additional-results">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
+  <!-- Additional results meshlab -->
+<section class="section" id="additional-results">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
 
-          <!-- Section title -->
-          <h2 class="title is-3 has-text-centered">Additional Results</h2>
-          <!-- Intro text -->
-          <div class="content has-text-justified additional-results-intro">
-            <p>
-              We provide additional qualitative comparisons to further assess
-              the geometric fidelity of reconstructed hairstyles.
-            </p>
-          </div>
+        <h2 class="title is-3 has-text-centered">Additional Results</h2>
 
-          <!-- Images -->
-          <div class="additional-results-block">
-            <img src="static/images/pointclouds_1_.png" class="additional-results-image">
-            <img src="static/images/pointclouds_2_.png" class="additional-results-image">
+        <div class="content has-text-justified additional-results-intro">
+          <p>
+            We provide additional qualitative comparisons to evaluate the geometric fidelity of reconstructed hairstyles,
+            with a focus on strand-level structure, local flow, and overall hair volume.
+          </p>
+        </div>
 
-            <!-- Caption -->
-            <p class="additional-results-caption has-text-centered">
-              <strong>Geometry-based comparison.</strong>
-              We compare our method against Im2Haircut, Difflocks, Hairstep, and MV-Scanner on multiple subjects from the NeRSemble dataset.
-              We visualize geometry-only renderings with zoom-in crops highlighting local strand structure.
-              Our method preserves strand structure, local flow, and overall hair volume across diverse hairstyles.<br><br>
-            </p>
-          </div>
+        <div class="additional-results-block">
+          <img src="static/images/pointclouds_1_.png" class="additional-results-image">
+          <img src="static/images/pointclouds_2_.png" class="additional-results-image">
 
-          <div class="content has-text-justified additional-results-intro">
-            <p> <!--class="additional-results-description"-->
-              Our method produces more accurate and coherent strand-based geometry, preserving both volumetric structure and local strand flow.
-              In particular, it better preserves volumetric structure and strand alignment in side views, where competing methods often exhibit oversmoothing or noisy, incoherent strand patterns.
-              These results highlight the ability of our approach to reconstruct more faithful and personalized hairstyles compared to prior work.
-            </p>
-          
-          </div>
+          <p class="additional-results-caption has-text-centered">
+            <strong>Geometry-based comparison.</strong>
+            We compare Vid2Haircut with Im2Haircut, Difflocks, Hairstep, and MV-Scanner on multiple subjects from the NeRSemble dataset.
+            Geometry-only renderings and zoom-in crops highlight local strand structure and reconstruction artifacts.
+          </p>
+        </div>
+
+        <div class="content has-text-justified additional-results-description">
+          <p>
+            Vid2Haircut produces more coherent strand-based geometry while preserving both volumetric hair structure and local strand flow.
+            The improvement is especially visible in side views, where prior methods often oversmooth the hairstyle, lose volume, or produce noisy and misaligned strand patterns.
+            These results show that using multiple views from a short monocular video enables more faithful and personalized hairstyle reconstruction than prior single-view and scanning-based baselines.
+          </p>
         </div>
 
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
 
 
 
