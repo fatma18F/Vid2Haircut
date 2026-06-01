@@ -127,3 +127,29 @@
   display: block;
   margin: 0 auto 0.75rem auto;
 }
+
+
+
+.simulation-video-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.simulation-video {
+  width: 45%;
+  max-width: 420px;
+  border-radius: 12px;
+}
+
+.simulation-text {
+  margin-bottom: 16px;
+}
+
+.simulation-caption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
